@@ -1,0 +1,2102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origen y fundamento de la sociedad y el poder — Filosofía · IES Alquipir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #F7F5F0;
+            --bg-secondary: #EDE9E0;
+            --bg-card: #FFFFFF;
+            --text-primary: #1E2018;
+            --text-secondary: #5A5A4A;
+            --text-tertiary: #9A9A85;
+            --accent: #5C7A3E;
+            --accent-hover: #466030;
+            --accent-light: rgba(92, 122, 62, 0.09);
+            --accent-light-hover: rgba(92, 122, 62, 0.16);
+            --gold: #9A7A2E;
+            --gold-light: rgba(154, 122, 46, 0.10);
+            --border: rgba(0, 0, 0, 0.07);
+            --border-hover: rgba(0, 0, 0, 0.14);
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 2px 8px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-lg: 0 4px 20px rgba(0,0,0,0.09), 0 2px 6px rgba(0,0,0,0.05);
+            --radius: 12px;
+            --radius-sm: 8px;
+            --highlight: #F0F5E8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 17px;
+            min-height: 100vh;
+        }
+
+        /* ── Header ── */
+        .header {
+            background: rgba(247, 245, 240, 0.92);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+
+        .header-inner {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 15px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--accent);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .logo-text {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 22px;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .header-nav a {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: var(--radius-sm);
+            transition: all 0.2s ease;
+        }
+
+        .header-nav a:hover {
+            background: var(--accent-light);
+            color: var(--accent);
+        }
+
+        /* ── Hero ── */
+        .hero {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 56px 24px 40px;
+            display: flex;
+            gap: 44px;
+            align-items: flex-start;
+        }
+
+        .hero-emblem {
+            flex-shrink: 0;
+            width: 200px;
+            height: 260px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-lg);
+            background: linear-gradient(145deg, #2E3B1E 0%, #3D5028 40%, #5C7A3E 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            position: relative;
+        }
+
+        .hero-emblem::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .hero-emblem-icon {
+            font-size: 64px;
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-emblem-label {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-style: italic;
+            font-size: 15px;
+            color: rgba(255,255,255,0.6);
+            letter-spacing: 0.04em;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            background: var(--accent-light);
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+        }
+
+        .hero-text h1 {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 40px;
+            font-weight: 400;
+            color: var(--text-primary);
+            letter-spacing: -0.03em;
+            line-height: 1.12;
+            margin-bottom: 8px;
+        }
+
+        .hero-dates {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--text-tertiary);
+            margin-bottom: 16px;
+        }
+
+        .hero-subtitle {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-style: italic;
+            font-size: 22px;
+            color: var(--text-secondary);
+            line-height: 1.55;
+            margin-bottom: 20px;
+        }
+
+        .hero-intro {
+            font-size: 17px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* ── Table of contents ── */
+        .toc {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 24px 40px;
+        }
+
+        .toc-inner {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 22px 28px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .toc-label {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+            width: 100%;
+            margin-bottom: 2px;
+        }
+
+        .toc-link {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 5px 14px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            transition: all 0.2s ease;
+        }
+
+        .toc-link:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--accent-light);
+        }
+
+        /* ── Content sections ── */
+        .content {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 24px 64px;
+        }
+
+        .section {
+            margin-bottom: 52px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 22px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section-icon {
+            font-size: 22px;
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--accent-light);
+            border-radius: var(--radius-sm);
+        }
+
+        .section-title {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 28px;
+            font-weight: 400;
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+        }
+
+        /* ── Prose ── */
+        .prose {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px 34px;
+        }
+
+        .prose p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            line-height: 1.87;
+            margin-bottom: 16px;
+        }
+
+        .prose p:last-child { margin-bottom: 0; }
+
+        .prose strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .highlight {
+            background: var(--highlight);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        /* ── Quote block ── */
+        .quote-block {
+            margin: 20px 0;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--gold);
+            border-radius: var(--radius);
+            padding: 24px 30px;
+        }
+
+        .quote-text {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-style: italic;
+            font-size: 21px;
+            color: var(--text-primary);
+            line-height: 1.62;
+            margin-bottom: 12px !important;
+        }
+
+        .quote-author {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-tertiary);
+            letter-spacing: 0.02em;
+        }
+
+        /* ── Concepts grid ── */
+        .concepts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+            gap: 16px;
+        }
+
+        .concept-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 22px 24px;
+            transition: all 0.22s ease;
+        }
+
+        .concept-card:hover {
+            border-color: var(--accent);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .concept-card h4 {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .concept-card p {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.72;
+        }
+
+        /* ── Philosophers grid ── */
+        .philosophers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 22px;
+        }
+
+        .philosopher-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 26px;
+            transition: all 0.22s ease;
+        }
+
+        .philosopher-card:hover {
+            border-color: var(--accent);
+            box-shadow: var(--shadow-md);
+        }
+
+        .philosopher-card.featured {
+            border-color: rgba(92, 122, 62, 0.3);
+            background: linear-gradient(145deg, #fff 0%, #f5f8f1 100%);
+        }
+
+        .philosopher-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .philosopher-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--accent-light);
+            border: 2px solid rgba(92,122,62,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            flex-shrink: 0;
+        }
+
+        .philosopher-meta h3 {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 22px;
+            font-weight: 400;
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+        }
+
+        .philosopher-meta span {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            font-weight: 500;
+        }
+
+        .philosopher-card p {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.75;
+            margin-bottom: 16px;
+        }
+
+        .expand-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent);
+            background: var(--accent-light);
+            border: 1px solid transparent;
+            border-radius: 20px;
+            padding: 6px 16px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .expand-btn:hover {
+            background: var(--accent-light-hover);
+            border-color: var(--accent);
+        }
+
+        /* ── Three authors comparison ── */
+        .three-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 18px;
+        }
+
+        .author-col {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+
+        .author-col-header {
+            padding: 18px 20px 14px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .author-col-header h4 {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+
+        .author-col-header span {
+            font-size: 13px;
+            color: var(--text-tertiary);
+        }
+
+        .author-col-body {
+            padding: 16px 20px 20px;
+        }
+
+        .author-row {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+
+        .author-row:last-child { margin-bottom: 0; }
+
+        .author-row-label {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+            color: var(--accent);
+        }
+
+        .author-row-value {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ── Timeline ── */
+        .timeline {
+            position: relative;
+            padding-left: 28px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            bottom: 8px;
+            width: 2px;
+            background: var(--border);
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 28px;
+            padding-left: 20px;
+        }
+
+        .timeline-item:last-child { margin-bottom: 0; }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 7px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 2px solid var(--bg-primary);
+            box-shadow: 0 0 0 2px var(--accent);
+        }
+
+        .timeline-year {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--accent);
+            background: var(--accent-light);
+            padding: 2px 10px;
+            border-radius: 10px;
+            margin-bottom: 6px;
+            letter-spacing: 0.04em;
+        }
+
+        .timeline-event {
+            font-size: 17px;
+            color: var(--text-secondary);
+            line-height: 1.75;
+        }
+
+        /* ── Context box ── */
+        .context-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 26px 30px;
+        }
+
+        .context-box h4 {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 21px;
+            font-weight: 400;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .context-box p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            line-height: 1.85;
+            margin-bottom: 12px;
+        }
+
+        .context-box p:last-child { margin-bottom: 0; }
+
+        .context-box strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* ── Works list ── */
+        .works-list {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+
+        .work-item {
+            display: flex;
+            gap: 22px;
+            align-items: flex-start;
+            padding: 20px 26px;
+            border-bottom: 1px solid var(--border);
+            transition: background 0.15s ease;
+        }
+
+        .work-item:last-child { border-bottom: none; }
+        .work-item:hover { background: var(--bg-secondary); }
+
+        .work-year {
+            flex-shrink: 0;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--accent);
+            background: var(--accent-light);
+            padding: 3px 10px;
+            border-radius: 10px;
+            margin-top: 2px;
+            letter-spacing: 0.04em;
+            white-space: nowrap;
+        }
+
+        .work-info h4 {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 19px;
+            font-weight: 400;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+
+        .work-info p {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.72;
+        }
+
+        /* ── Glossary ── */
+        .glossary {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+
+        .glossary-term {
+            padding: 18px 26px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .glossary-term:last-child { border-bottom: none; }
+
+        .glossary-term dt {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .glossary-term dd {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.72;
+            margin-left: 0;
+        }
+
+        /* ── Info banner ── */
+        .info-banner {
+            background: var(--gold-light);
+            border: 1px solid rgba(154, 122, 46, 0.22);
+            border-radius: var(--radius);
+            padding: 16px 22px;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .info-banner-icon { font-size: 20px; flex-shrink: 0; }
+
+        .info-banner p {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.65;
+        }
+
+        .info-banner strong { color: var(--text-primary); }
+
+        /* ── Medieval authors grid ── */
+        .medieval-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 16px;
+        }
+
+        .medieval-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px 22px;
+            transition: all 0.2s ease;
+        }
+
+        .medieval-card:hover {
+            border-color: var(--gold);
+            box-shadow: var(--shadow-md);
+        }
+
+        .medieval-card-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .medieval-card-icon {
+            font-size: 26px;
+        }
+
+        .medieval-card h4 {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+
+        .medieval-card span {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            display: block;
+            margin-top: 1px;
+        }
+
+        .medieval-card p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        /* ── Footer ── */
+        .footer {
+            border-top: 1px solid var(--border);
+            padding: 26px 24px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-tertiary);
+        }
+
+        .footer a { color: var(--accent); text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+
+        /* ══════════════════════════
+           MODALES
+        ══════════════════════════ */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.48);
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+            padding: 24px;
+            overflow-y: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-overlay.active { display: flex; }
+
+        .modal-box {
+            background: var(--bg-card);
+            border-radius: 16px;
+            box-shadow: 0 28px 72px rgba(0,0,0,0.22), 0 8px 24px rgba(0,0,0,0.12);
+            max-width: 720px;
+            width: 100%;
+            max-height: 86vh;
+            overflow-y: auto;
+            animation: modalIn 0.26s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes modalIn {
+            from { opacity: 0; transform: scale(0.91) translateY(20px); }
+            to   { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .modal-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 28px 30px 18px;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            background: var(--bg-card);
+            border-radius: 16px 16px 0 0;
+            z-index: 1;
+        }
+
+        .modal-title {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 26px;
+            font-weight: 400;
+            color: var(--text-primary);
+            line-height: 1.22;
+        }
+
+        .modal-subtitle {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-tertiary);
+            margin-top: 4px;
+        }
+
+        .modal-close {
+            background: var(--bg-secondary);
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 18px;
+            color: var(--text-secondary);
+            flex-shrink: 0;
+            transition: all 0.2s ease;
+        }
+
+        .modal-close:hover {
+            background: var(--accent-light);
+            color: var(--accent);
+        }
+
+        .modal-body {
+            padding: 26px 30px 32px;
+        }
+
+        .modal-body h4 {
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: 21px;
+            font-weight: 400;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            margin-top: 22px;
+        }
+
+        .modal-body h4:first-child { margin-top: 0; }
+
+        .modal-body p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            line-height: 1.87;
+            margin-bottom: 14px;
+        }
+
+        .modal-body p:last-child { margin-bottom: 0; }
+
+        .modal-body strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .modal-body em { font-style: italic; }
+
+        .modal-body ul {
+            margin: 10px 0 16px 22px;
+        }
+
+        .modal-body li {
+            font-size: 17px;
+            color: var(--text-secondary);
+            line-height: 1.77;
+            margin-bottom: 7px;
+        }
+
+        .modal-tag {
+            display: inline-flex;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--accent);
+            background: var(--accent-light);
+            padding: 3px 11px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .modal-quote {
+            border-left: 3px solid var(--gold);
+            padding: 12px 18px;
+            margin: 18px 0;
+            background: var(--gold-light);
+            border-radius: 0 8px 8px 0;
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-style: italic;
+            font-size: 18px;
+            color: var(--text-primary);
+            line-height: 1.62;
+        }
+
+        /* ── Comparison table ── */
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 15px;
+            margin: 20px 0;
+        }
+
+        .compare-table th {
+            background: var(--bg-secondary);
+            font-weight: 600;
+            color: var(--text-primary);
+            padding: 10px 14px;
+            text-align: left;
+            border: 1px solid var(--border);
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .compare-table td {
+            padding: 10px 14px;
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            vertical-align: top;
+            line-height: 1.6;
+        }
+
+        .compare-table tr:hover td {
+            background: var(--bg-secondary);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 900px) {
+            .three-col { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; padding: 32px 16px 24px; }
+            .hero-emblem { width: 100%; height: 140px; }
+            .hero-text h1 { font-size: 30px; }
+            .concepts-grid { grid-template-columns: 1fr; }
+            .philosophers-grid { grid-template-columns: 1fr; }
+            .medieval-grid { grid-template-columns: 1fr; }
+            .content { padding: 0 16px 40px; }
+            .toc { padding: 0 16px 24px; }
+            .modal-box { max-height: 92vh; }
+            .modal-header, .modal-body { padding-left: 20px; padding-right: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header class="header">
+    <div class="header-inner">
+        <div class="logo-area">
+            <div class="logo-icon">φ</div>
+            <span class="logo-text">IES Alquipir · Filosofía</span>
+        </div>
+        <nav class="header-nav">
+            <a href="#introduccion">Introducción</a>
+            <a href="#medieval">Pensamiento medieval</a>
+            <a href="#contractualistas">Contractualistas</a>
+            <a href="#comparacion">Comparación</a>
+            <a href="#conceptos">Conceptos</a>
+            <a href="#glosario">Glosario</a>
+        </nav>
+    </div>
+</header>
+
+<!-- ── HERO ── -->
+<div class="hero">
+    <div class="hero-emblem">
+        <span class="hero-emblem-icon">⚖️</span>
+        <span class="hero-emblem-label">Philosophia politica</span>
+    </div>
+    <div class="hero-text">
+        <div class="hero-tag">📖 Filosofía Política Moderna</div>
+        <h1>Origen y fundamento<br>de la sociedad y el poder</h1>
+        <p class="hero-dates">Del pensamiento político medieval al contrato social · siglos XIII–XVIII</p>
+        <p class="hero-subtitle">«¿Por qué obedecemos? ¿Quién tiene derecho a mandar?»</p>
+        <p class="hero-intro">Ninguna pregunta ha sido más urgente para la filosofía política que ésta: ¿cuál es el origen legítimo del poder? La respuesta medieval —el poder viene de Dios— fue sustituida progresivamente por una respuesta radicalmente nueva: el poder viene del acuerdo libre de los individuos. Este paso, que tarda siglos en completarse, transforma para siempre la manera en que los seres humanos conciben la autoridad, la libertad y la justicia.</p>
+    </div>
+</div>
+
+<!-- ── TABLE OF CONTENTS ── -->
+<div class="toc">
+    <div class="toc-inner">
+        <span class="toc-label">Contenidos</span>
+        <a class="toc-link" href="#introduccion">Introducción</a>
+        <a class="toc-link" href="#medieval">Pensamiento medieval</a>
+        <a class="toc-link" href="#transicion">Transición moderna</a>
+        <a class="toc-link" href="#contractualistas">Hobbes · Locke · Rousseau</a>
+        <a class="toc-link" href="#comparacion">Tabla comparativa</a>
+        <a class="toc-link" href="#linea-temporal">Línea temporal</a>
+        <a class="toc-link" href="#conceptos">Conceptos clave</a>
+        <a class="toc-link" href="#obras">Obras fundamentales</a>
+        <a class="toc-link" href="#debates">Grandes debates</a>
+        <a class="toc-link" href="#glosario">Glosario</a>
+    </div>
+</div>
+
+<!-- ── MAIN CONTENT ── -->
+<main class="content">
+
+    <!-- ═══════ INTRODUCCIÓN ═══════ -->
+    <div class="section" id="introduccion">
+        <div class="section-header">
+            <div class="section-icon">🧭</div>
+            <h2 class="section-title">La gran pregunta de la filosofía política</h2>
+        </div>
+
+        <div class="prose" style="margin-bottom:18px;">
+            <p>¿Por qué existe la sociedad política? ¿Por qué hay gobernantes y gobernados? ¿Cuándo es legítimo obedecer y cuándo es legítimo resistir o rebelarse? Estas preguntas no son abstractas: tienen consecuencias directas sobre la vida de millones de personas. Las respuestas que se dieron a lo largo de los siglos determinaron qué tipo de gobierno se consideraba justo, qué derechos tenían los individuos frente al poder y qué ocurría cuando ese poder se corrompía.</p>
+            <p>Durante la Edad Media, la respuesta dominante fue <strong>teológica</strong>: el poder político procede de Dios, que lo delega en los monarcas o lo distribuye según un orden natural jerárquico. Esta concepción no era ingenua: los pensadores medievales desarrollaron teorías sofisticadas sobre los límites del poder, la tiranía y el bien común. Pero su punto de partida siempre era religioso.</p>
+            <p>A partir del siglo XVII, una corriente de pensadores desarrolló una respuesta completamente diferente, basada en la <strong>razón natural</strong> y en los derechos de los individuos: la <em>teoría del contrato social</em>. Según esta teoría, la sociedad política no es un dato divino ni natural, sino el resultado de un <span class="highlight">acuerdo —real o hipotético— entre individuos libres e iguales</span> que deciden someterse a una autoridad común a cambio de ciertos beneficios (seguridad, libertad, justicia).</p>
+        </div>
+
+        <div class="info-banner">
+            <span class="info-banner-icon">⚠️</span>
+            <p><strong>Aviso interpretativo:</strong> El «contrato social» no es un contrato histórico que en algún momento se firmó. Es un <em>experimento mental</em>: sirve para preguntarse cuáles serían las condiciones racionales de un acuerdo justo entre personas libres, y para evaluar si las instituciones reales se acercan o se alejan de ese ideal.</p>
+        </div>
+
+        <div class="quote-block">
+            <p class="quote-text">«El hombre nació libre, y en todas partes se encuentra encadenado. Quien se cree amo de los demás no deja de ser más esclavo que ellos.»</p>
+            <span class="quote-author">— Jean-Jacques Rousseau, <em>El contrato social</em> (1762), Libro I, capítulo 1</span>
+        </div>
+    </div>
+
+    <!-- ═══════ PENSAMIENTO MEDIEVAL ═══════ -->
+    <div class="section" id="medieval">
+        <div class="section-header">
+            <div class="section-icon">🏰</div>
+            <h2 class="section-title">El pensamiento político medieval</h2>
+        </div>
+
+        <div class="prose" style="margin-bottom:18px;">
+            <p>Sería un error presentar el pensamiento político medieval como una masa indiferenciada de teología autoritaria. Los pensadores medievales desarrollaron debates de gran sofisticación sobre la naturaleza del poder, sus límites, la relación entre autoridad civil y eclesiástica y el derecho de resistencia frente a la tiranía. Sin conocer ese trasfondo, la revolución contractualista del siglo XVII pierde buena parte de su sentido.</p>
+        </div>
+
+        <div class="medieval-grid">
+
+            <div class="medieval-card">
+                <div class="medieval-card-header">
+                    <span class="medieval-card-icon">✝️</span>
+                    <div>
+                        <h4>San Agustín de Hipona</h4>
+                        <span>354 – 430 d.C.</span>
+                    </div>
+                </div>
+                <p>En <em>La Ciudad de Dios</em>, distingue la <strong>ciudad de Dios</strong> (comunidad espiritual de los elegidos) de la <strong>ciudad terrena</strong> (orden político basado en la coacción). El Estado es necesario a causa del pecado original: sin la corrupción humana, no haría falta coacción. La autoridad política es legítima en tanto sirve a la paz, pero es provisional y subordinada al orden divino.</p>
+                <button class="expand-btn" onclick="openModal('agustin')">+ Ampliar</button>
+            </div>
+
+            <div class="medieval-card">
+                <div class="medieval-card-header">
+                    <span class="medieval-card-icon">📜</span>
+                    <div>
+                        <h4>Santo Tomás de Aquino</h4>
+                        <span>1225 – 1274</span>
+                    </div>
+                </div>
+                <p>La síntesis más importante del pensamiento político medieval. Tomás integra la política de <strong>Aristóteles</strong> con la teología cristiana: el ser humano es por naturaleza un animal político (<em>animal sociale et politicum</em>). El Estado no es consecuencia del pecado, sino exigencia de la naturaleza humana. La ley humana justa es una participación de la ley eterna. Distingue la ley eterna, natural, humana y divina.</p>
+                <button class="expand-btn" onclick="openModal('tomas')">+ Ampliar</button>
+            </div>
+
+            <div class="medieval-card">
+                <div class="medieval-card-header">
+                    <span class="medieval-card-icon">⚔️</span>
+                    <div>
+                        <h4>La querella de las investiduras</h4>
+                        <span>Siglos XI – XIII</span>
+                    </div>
+                </div>
+                <p>El conflicto entre el Papado y el Imperio por el derecho a nombrar obispos y autoridades eclesiásticas obligó a los pensadores medievales a elaborar doctrinas sobre <strong>la relación entre poder espiritual y poder temporal</strong>. ¿Quién tiene la autoridad última? ¿El Papa sobre el Emperador o al revés? Esta disputa generó una rica teoría política sobre la soberanía y sus límites.</p>
+                <button class="expand-btn" onclick="openModal('investiduras')">+ Ampliar</button>
+            </div>
+
+            <div class="medieval-card">
+                <div class="medieval-card-header">
+                    <span class="medieval-card-icon">🌿</span>
+                    <div>
+                        <h4>Marsilio de Padua</h4>
+                        <span>c. 1275 – 1342</span>
+                    </div>
+                </div>
+                <p>En el <em>Defensor Pacis</em> (1324), Marsilio defiende la <strong>soberanía popular</strong>: el poder legislativo reside en el pueblo o en sus representantes. El gobernante es un ejecutor de la ley, no su fuente. Rechaza la supremacía del Papa sobre los asuntos civiles. Es uno de los primeros teóricos del gobierno laico y representativo, y anticipa ideas que florecerán siglos después.</p>
+                <button class="expand-btn" onclick="openModal('marsilio')">+ Ampliar</button>
+            </div>
+
+            <div class="medieval-card">
+                <div class="medieval-card-header">
+                    <span class="medieval-card-icon">🗡️</span>
+                    <div>
+                        <h4>El derecho de resistencia</h4>
+                        <span>Tradición medieval</span>
+                    </div>
+                </div>
+                <p>Los escolásticos medievales desarrollaron una doctrina del <strong>tiranicidio y la resistencia</strong>: si un gobernante viola las leyes de Dios y la justicia natural, los súbditos pueden resistirle y, en último extremo, deponerle o incluso matarle. Esta doctrina, presente en Juan de Salisbury y en el propio Tomás de Aquino, es un antecedente directo de las teorías del contrato social.</p>
+                <button class="expand-btn" onclick="openModal('resistencia')">+ Ampliar</button>
+            </div>
+
+            <div class="medieval-card">
+                <div class="medieval-card-header">
+                    <span class="medieval-card-icon">🌍</span>
+                    <div>
+                        <h4>Francisco de Vitoria y la Escuela de Salamanca</h4>
+                        <span>Siglo XVI</span>
+                    </div>
+                </div>
+                <p>En el contexto de la conquista de América, los teólogos dominicos de Salamanca desarrollaron una teoría del <strong>derecho natural y de gentes</strong>. Vitoria argumentó que los indígenas americanos tenían derechos naturales que los conquistadores debían respetar. La Escuela de Salamanca sentó bases del derecho internacional y de los derechos naturales que influyeron directamente en Grocio, Locke y la tradición contractualista.</p>
+                <button class="expand-btn" onclick="openModal('salamanca')">+ Ampliar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ═══════ TRANSICIÓN A LA MODERNIDAD ═══════ -->
+    <div class="section" id="transicion">
+        <div class="section-header">
+            <div class="section-icon">🔄</div>
+            <h2 class="section-title">La transición a la modernidad</h2>
+        </div>
+
+        <div class="context-box" style="margin-bottom:16px;">
+            <h4>Las guerras de religión y la crisis del orden medieval</h4>
+            <p>El siglo XVI vivió la ruptura definitiva de la unidad religiosa de Europa occidental. La <strong>Reforma protestante</strong> de Lutero (1517) fracturó la Iglesia e hizo imposible el modelo medieval de una sola verdad religiosa garantizada por el poder del Papa. Las guerras de religión que siguieron —la de los Treinta Años (1618–1648) fue la más devastadora— plantearon con urgencia un problema nuevo: ¿cómo convivir en paz cuando los ciudadanos tienen convicciones religiosas incompatibles?</p>
+            <p>La respuesta emergente fue el <strong>Estado laico soberano</strong>: una autoridad política que no fundamenta su poder en la verdad religiosa, sino en su capacidad para garantizar la paz y la seguridad. Hobbes es el gran teórico de esta solución.</p>
+        </div>
+
+        <div class="context-box" style="margin-bottom:16px;">
+            <h4>Maquiavelo y la autonomía de la política</h4>
+            <p>Nicolás Maquiavelo (1469–1527) supone una ruptura decisiva con la tradición medieval. En <em>El Príncipe</em> (1513) y los <em>Discursos sobre Tito Livio</em>, estudia el poder político <em>tal como es</em>, no como debería ser según la moral cristiana. La política tiene sus propias leyes y el gobernante debe conocerlas si quiere tener éxito. Esta <strong>autonomía de la política</strong> respecto de la teología y la moral es un paso previo necesario para la teoría contractualista.</p>
+        </div>
+
+        <div class="context-box">
+            <h4>Hugo Grocio y el derecho natural laico</h4>
+            <p>Hugo Grocio (1583–1645) dio un paso fundamental: formuló una teoría del <strong>derecho natural independiente de la teología</strong>. El derecho natural valdría incluso si Dios no existiera («<em>etiamsi daremus non esse Deum</em>»), porque se funda en la naturaleza racional y social del ser humano. Esta laicización del derecho natural fue imprescindible para que los contractualistas pudieran fundar el Estado en la razón y el acuerdo, sin necesidad de apelar a la voluntad divina.</p>
+        </div>
+    </div>
+
+    <!-- ═══════ LOS TRES CONTRACTUALISTAS ═══════ -->
+    <div class="section" id="contractualistas">
+        <div class="section-header">
+            <div class="section-icon">👤</div>
+            <h2 class="section-title">Los tres grandes contractualistas</h2>
+        </div>
+
+        <div class="philosophers-grid">
+
+            <div class="philosopher-card featured">
+                <div class="philosopher-header">
+                    <div class="philosopher-avatar">⚙️</div>
+                    <div class="philosopher-meta">
+                        <h3>Thomas Hobbes</h3>
+                        <span>1588 – 1679 · Inglaterra</span>
+                    </div>
+                </div>
+                <p>Para Hobbes, en el <strong>estado de naturaleza</strong> no hay ley ni justicia: los individuos, guiados por el afán de supervivencia y poder, se hallan en una «guerra de todos contra todos». La vida natural es «solitaria, pobre, sucia, brutal y breve». Para salir de este infierno, los individuos ceden todos sus derechos a un soberano absoluto —el <strong>Leviatán</strong>— que impone el orden. La legitimidad del Estado se mide sólo por su eficacia: mantener la paz.</p>
+                <button class="expand-btn" onclick="openModal('hobbes')">+ Ampliar información</button>
+            </div>
+
+            <div class="philosopher-card featured">
+                <div class="philosopher-header">
+                    <div class="philosopher-avatar">🌿</div>
+                    <div class="philosopher-meta">
+                        <h3>John Locke</h3>
+                        <span>1632 – 1704 · Inglaterra</span>
+                    </div>
+                </div>
+                <p>Para Locke, el estado de naturaleza no es guerra, sino un estado de <strong>paz relativa gobernado por la ley natural</strong>. Los individuos poseen ya derechos naturales (vida, libertad y propiedad) antes de cualquier acuerdo. El contrato social se hace para <em>proteger</em> esos derechos, no para crearlos. El gobierno que los viola pierde su legitimidad y los ciudadanos tienen <strong>derecho de rebelión</strong>. Fundamento del liberalismo político.</p>
+                <button class="expand-btn" onclick="openModal('locke')">+ Ampliar información</button>
+            </div>
+
+            <div class="philosopher-card featured">
+                <div class="philosopher-header">
+                    <div class="philosopher-avatar">🏔️</div>
+                    <div class="philosopher-meta">
+                        <h3>Jean-Jacques Rousseau</h3>
+                        <span>1712 – 1778 · Ginebra / Francia</span>
+                    </div>
+                </div>
+                <p>Rousseau invierte la narrativa de sus predecesores: el estado de naturaleza es un estado de <strong>inocencia y libertad</strong>. Es la sociedad y la propiedad las que corrompen al ser humano. El contrato social legítimo no debe sacrificar la libertad natural, sino transformarla en <strong>libertad civil y moral</strong> a través de la <em>voluntad general</em>. La soberanía es inalienable e indivisible y reside siempre en el pueblo.</p>
+                <button class="expand-btn" onclick="openModal('rousseau')">+ Ampliar información</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ═══════ TABLA COMPARATIVA ═══════ -->
+    <div class="section" id="comparacion">
+        <div class="section-header">
+            <div class="section-icon">📊</div>
+            <h2 class="section-title">Comparación: Hobbes, Locke y Rousseau</h2>
+        </div>
+
+        <div class="three-col">
+            <div class="author-col">
+                <div class="author-col-header">
+                    <h4>Thomas Hobbes</h4>
+                    <span>1651 — <em>Leviatán</em></span>
+                </div>
+                <div class="author-col-body">
+                    <div class="author-row">
+                        <span class="author-row-label">Estado de naturaleza</span>
+                        <span class="author-row-value">Guerra de todos contra todos. Violento, miserable, sin ley ni justicia.</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Naturaleza humana</span>
+                        <span class="author-row-value">Egoísta, movida por el miedo a la muerte y el deseo de poder. Igualdad de debilidad.</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Contrato social</span>
+                        <span class="author-row-value">Renuncia total a los derechos propios en favor del soberano. Pacto de sujeción.</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Soberanía</span>
+                        <span class="author-row-value">Absoluta, indivisible, irresistible. El soberano no está vinculado por el contrato.</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Resistencia</span>
+                        <span class="author-row-value">Imposible excepto si el soberano amenaza la vida del súbdito directamente.</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Libertad</span>
+                        <span class="author-row-value">Solo donde la ley calla. Ausencia de impedimentos físicos.</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Legado</span>
+                        <span class="author-row-value">Absolutismo moderno racional. Teoría del Estado laico soberano.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="author-col">
+                <div class="author-col-header">
+                    <h4>John Locke</h4>
+                    <span>1689 — <em>Dos Tratados del Gobierno Civil</em></span>
+                </div>
+                <div class="author-col-body">
+                    <div class="author-row">
+                        <span class="author-row-label">Estado de naturaleza</span>
+                        <span class="author-row-value">Paz relativa regida por la ley natural. Ya existen derechos (vida, libertad, propiedad).</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Naturaleza humana</span>
+                        <span class="author-row-value">Racional y sociable. Capaz de conocer la ley natural por la razón.</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Contrato social</span>
+                        <span class="author-row-value">Cesión parcial de poderes para proteger los derechos naturales ya existentes. Pacto de confianza (trust).</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Soberanía</span>
+                        <span class="author-row-value">Limitada. Separación de poderes (legislativo y ejecutivo). El poder supremo es el legislativo.</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Resistencia</span>
+                        <span class="author-row-value">Legítima cuando el gobierno viola los derechos naturales. Derecho de revolución.</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Libertad</span>
+                        <span class="author-row-value">Natural y civil: vivir bajo la ley que uno mismo ha consentido a través de sus representantes.</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Legado</span>
+                        <span class="author-row-value">Liberalismo político. Constitucionalismo. Independencia de EE.UU. Revolución Gloriosa.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="author-col">
+                <div class="author-col-header">
+                    <h4>Jean-Jacques Rousseau</h4>
+                    <span>1762 — <em>El contrato social</em></span>
+                </div>
+                <div class="author-col-body">
+                    <div class="author-row">
+                        <span class="author-row-label">Estado de naturaleza</span>
+                        <span class="author-row-value">Inocencia y libertad. El «buen salvaje» no es bueno activamente; simplemente es libre de la corrupción social.</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Naturaleza humana</span>
+                        <span class="author-row-value">Naturalmente libre y perfectible. La desigualdad y el mal son productos de la sociedad, no de la naturaleza.</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Contrato social</span>
+                        <span class="author-row-value">Cada uno se entrega por igual a la comunidad. La libertad natural se convierte en libertad civil y moral.</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Soberanía</span>
+                        <span class="author-row-value">Inalienable e indivisible. Reside en el pueblo. La voluntad general no puede delegarse.</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Resistencia</span>
+                        <span class="author-row-value">La soberanía siempre pertenece al pueblo. El gobierno que traiciona la voluntad general es ilegítimo.</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Libertad</span>
+                        <span class="author-row-value">Verdadera libertad = obediencia a la ley que uno mismo se ha dado (autonomía).</span>
+                    </div>
+                    <div class="author-row">
+                        <span class="author-row-label">Legado</span>
+                        <span class="author-row-value">Democracia directa. Soberanía popular. Revolución Francesa. Romanticismo político.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════ LÍNEA TEMPORAL ═══════ -->
+    <div class="section" id="linea-temporal">
+        <div class="section-header">
+            <div class="section-icon">📅</div>
+            <h2 class="section-title">Línea temporal</h2>
+        </div>
+
+        <div class="prose">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">413–426</div>
+                    <p class="timeline-event">San Agustín escribe <em>La Ciudad de Dios</em>. El poder político nace del pecado y es necesario para contener la violencia humana. La ciudad terrena es provisional frente a la ciudad de Dios.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1265–1274</div>
+                    <p class="timeline-event">Santo Tomás de Aquino escribe la <em>Suma Teológica</em> y <em>De Regimine Principum</em>. Síntesis aristotélico-cristiana: el hombre es por naturaleza político; la ley humana justa participa de la ley eterna. Tipología de las leyes y doctrina de la tiranía.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1324</div>
+                    <p class="timeline-event">Marsilio de Padua publica el <em>Defensor Pacis</em>. El poder legislativo reside en el pueblo; el gobernante es ejecutor de la ley. Separación de autoridad civil y eclesiástica. Anticipación del parlamentarismo.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1513</div>
+                    <p class="timeline-event">Maquiavelo escribe <em>El Príncipe</em>. La política se estudia como es, no como debería ser. La virtù del gobernante y la fortuna como categorías seculares de análisis político.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1539</div>
+                    <p class="timeline-event">Francisco de Vitoria pronuncia sus <em>Relectiones</em> sobre los indios americanos. Primer tratado moderno de derecho internacional basado en derechos naturales universales.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1625</div>
+                    <p class="timeline-event">Hugo Grocio publica <em>De Iure Belli ac Pacis</em>. Fundamentación del derecho natural al margen de la teología: «incluso si no hubiera Dios». Primer gran sistema de derecho natural moderno.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1651</div>
+                    <p class="timeline-event">Hobbes publica el <em>Leviatán</em>. Estado de naturaleza como guerra, contrato de sujeción total, soberanía absoluta. El primer gran sistema contractualista de la modernidad.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1688–89</div>
+                    <p class="timeline-event"><strong>Revolución Gloriosa</strong> en Inglaterra. El Parlamento depone a Jacobo II e impone condiciones a Guillermo III. Locke publica sus <em>Dos Tratados del Gobierno Civil</em> como justificación filosófica.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1690</div>
+                    <p class="timeline-event">Locke publica los <em>Dos Tratados del Gobierno Civil</em> y el <em>Ensayo sobre el entendimiento humano</em>. Derechos naturales prepolíticos, gobierno representativo limitado, derecho de revolución.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1748</div>
+                    <p class="timeline-event">Montesquieu publica <em>El espíritu de las leyes</em>. Doctrina de la separación de poderes (legislativo, ejecutivo, judicial) como garantía de la libertad política.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1762</div>
+                    <p class="timeline-event">Rousseau publica <em>El contrato social</em> y el <em>Emilio</em>. Voluntad general, soberanía popular inalienable, libertad como autonomía. Influencia directa en la Revolución Francesa.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1776</div>
+                    <p class="timeline-event"><strong>Declaración de Independencia</strong> de los Estados Unidos. Las ideas de Locke sobre derechos naturales y gobierno por consentimiento se convierten en derecho positivo.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1789</div>
+                    <p class="timeline-event"><strong>Revolución Francesa</strong>. La <em>Declaración de Derechos del Hombre y del Ciudadano</em> combina elementos de Locke (derechos naturales) y Rousseau (soberanía popular). El contrato social deja de ser teoría y se convierte en revolución.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════ CONCEPTOS CLAVE ═══════ -->
+    <div class="section" id="conceptos">
+        <div class="section-header">
+            <div class="section-icon">🔑</div>
+            <h2 class="section-title">Conceptos clave</h2>
+        </div>
+
+        <div class="concepts-grid">
+            <div class="concept-card">
+                <h4>📜 Estado de naturaleza</h4>
+                <p>Situación hipotética de los seres humanos <em>antes</em> de cualquier organización política. Es un experimento mental para determinar cuáles son los derechos y necesidades originales del ser humano y por qué necesita el Estado. Hobbes, Locke y Rousseau lo describen de maneras radicalmente distintas.</p>
+                <button class="expand-btn" onclick="openModal('estado-naturaleza')" style="margin-top:12px;">+ Ampliar</button>
+            </div>
+
+            <div class="concept-card">
+                <h4>🤝 Contrato social</h4>
+                <p>Acuerdo —real o hipotético— por el que los individuos aceptan someterse a una autoridad política a cambio de ciertos beneficios (seguridad, protección de derechos, justicia). Define las condiciones de legitimidad del poder político.</p>
+                <button class="expand-btn" onclick="openModal('contrato-social')" style="margin-top:12px;">+ Ampliar</button>
+            </div>
+
+            <div class="concept-card">
+                <h4>⚡ Soberanía</h4>
+                <p>El poder supremo en una comunidad política: quien tiene la última palabra. Puede residir en un monarca (Hobbes), en el legislativo representativo (Locke) o en el pueblo directamente (Rousseau). La teoría de la soberanía es el centro de toda filosofía política.</p>
+                <button class="expand-btn" onclick="openModal('soberania')" style="margin-top:12px;">+ Ampliar</button>
+            </div>
+
+            <div class="concept-card">
+                <h4>🌿 Ley natural</h4>
+                <p>Conjunto de principios morales y jurídicos accesibles a la razón humana, independientes de la legislación positiva. Para Tomás de Aquino, participa de la ley eterna; para Locke, prohíbe atentar contra la vida, libertad y propiedad de los otros; para Rousseau, se expresa en la piedad natural.</p>
+            </div>
+
+            <div class="concept-card">
+                <h4>🗳️ Voluntad general</h4>
+                <p>Concepto clave de Rousseau. La voluntad general no es la suma de voluntades individuales (voluntad de todos), sino la voluntad orientada al bien común. Cuando el ciudadano obedece la ley que surge de la voluntad general, se obedece a sí mismo: es libre.</p>
+                <button class="expand-btn" onclick="openModal('voluntad-general')" style="margin-top:12px;">+ Ampliar</button>
+            </div>
+
+            <div class="concept-card">
+                <h4>🏛️ Derechos naturales</h4>
+                <p>Derechos que poseen los individuos por su condición de seres humanos racionales, anteriores a cualquier ley positiva. Para Locke: vida, libertad y propiedad. Para los ilustrados franceses se añaden: seguridad y resistencia a la opresión. Fundamento de las declaraciones de derechos modernas.</p>
+            </div>
+
+            <div class="concept-card">
+                <h4>⚖️ Separación de poderes</h4>
+                <p>Distribución del poder estatal entre órganos distintos para evitar su concentración tiránica. Locke distingue el legislativo del ejecutivo. Montesquieu añade el judicial. Este principio es la base de las constituciones liberales y de los sistemas democráticos modernos.</p>
+            </div>
+
+            <div class="concept-card">
+                <h4>🔥 Derecho de resistencia</h4>
+                <p>Derecho —y en ocasiones deber— de los ciudadanos a oponerse a un gobierno que viola el contrato social. Para Locke, es un derecho fundamental; para Hobbes, prácticamente inexistente; para Rousseau, la soberanía nunca se pierde, por lo que el pueblo no necesita «resistir» sino simplemente reconocer su autoridad.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════ OBRAS FUNDAMENTALES ═══════ -->
+    <div class="section" id="obras">
+        <div class="section-header">
+            <div class="section-icon">📚</div>
+            <h2 class="section-title">Obras fundamentales</h2>
+        </div>
+
+        <div class="works-list">
+            <div class="work-item">
+                <span class="work-year">s. XIII</span>
+                <div class="work-info">
+                    <h4>Suma Teológica y De Regimine Principum — Tomás de Aquino</h4>
+                    <p>La síntesis definitiva del pensamiento político medieval. Integra Aristóteles con la teología cristiana: el Estado es natural, la ley humana justa debe derivar de la ley natural, y el tirano que actúa contra el bien común pierde su legitimidad.</p>
+                </div>
+            </div>
+            <div class="work-item">
+                <span class="work-year">1513</span>
+                <div class="work-info">
+                    <h4>El Príncipe — Nicolás Maquiavelo</h4>
+                    <p>La primera obra de filosofía política moderna en sentido estricto. Separa la política de la moral religiosa y estudia el poder tal como es. Conceptos como <em>virtù</em>, <em>fortuna</em> y la razón de Estado marcarán toda la teoría política posterior.</p>
+                </div>
+            </div>
+            <div class="work-item">
+                <span class="work-year">1625</span>
+                <div class="work-info">
+                    <h4>De Iure Belli ac Pacis — Hugo Grocio</h4>
+                    <p>Fundamentación secular del derecho natural y de gentes. El derecho natural vale independientemente de Dios. Primer gran sistema moderno de derecho internacional y base del pensamiento contractualista posterior.</p>
+                </div>
+            </div>
+            <div class="work-item">
+                <span class="work-year">1651</span>
+                <div class="work-info">
+                    <h4>Leviatán — Thomas Hobbes</h4>
+                    <p>El gran sistema contractualista del absolutismo moderno. Estado de naturaleza como guerra, contrato de sujeción total, soberanía absoluta e irresistible. La obra más influyente de filosofía política del siglo XVII.</p>
+                </div>
+            </div>
+            <div class="work-item">
+                <span class="work-year">1690</span>
+                <div class="work-info">
+                    <h4>Dos Tratados del Gobierno Civil — John Locke</h4>
+                    <p>El manifiesto del liberalismo político. Derechos naturales prepolíticos (vida, libertad, propiedad), gobierno por consentimiento, separación de poderes y derecho de revolución. Influencia directa en la Declaración de Independencia americana.</p>
+                </div>
+            </div>
+            <div class="work-item">
+                <span class="work-year">1748</span>
+                <div class="work-info">
+                    <h4>El espíritu de las leyes — Montesquieu</h4>
+                    <p>Tipología de los gobiernos (república, monarquía, despotismo) y principios que los animan (virtud, honor, miedo). La célebre doctrina de la separación de poderes como garantía institucional de la libertad política.</p>
+                </div>
+            </div>
+            <div class="work-item">
+                <span class="work-year">1755</span>
+                <div class="work-info">
+                    <h4>Discurso sobre el origen de la desigualdad — Rousseau</h4>
+                    <p>El diagnóstico: la propiedad privada y la sociedad civil son el origen de la desigualdad y la corrupción humanas. El «buen salvaje» como contrafigura del hombre social corrompido. Antecede y fundamenta <em>El contrato social</em>.</p>
+                </div>
+            </div>
+            <div class="work-item">
+                <span class="work-year">1762</span>
+                <div class="work-info">
+                    <h4>El contrato social — Jean-Jacques Rousseau</h4>
+                    <p>«El hombre nació libre y en todas partes está encadenado.» Voluntad general, soberanía popular inalienable, libertad como autonomía. La obra que más directamente inspiró la Revolución Francesa y las tradiciones democrático-radicales modernas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════ GRANDES DEBATES ═══════ -->
+    <div class="section" id="debates">
+        <div class="section-header">
+            <div class="section-icon">⚔️</div>
+            <h2 class="section-title">Grandes debates</h2>
+        </div>
+
+        <div class="concepts-grid">
+            <div class="concept-card">
+                <h4>¿Es el Estado natural o artificial?</h4>
+                <p>Aristóteles y Tomás: el ser humano es por naturaleza político; el Estado surge de la naturaleza social humana. Hobbes, Locke, Rousseau: el Estado es una construcción artificial, producto de un acuerdo. Esta diferencia tiene enormes consecuencias sobre cómo valoramos al Estado y sus límites.</p>
+                <button class="expand-btn" onclick="openModal('debate-natural-artificial')" style="margin-top:12px;">+ Ampliar</button>
+            </div>
+
+            <div class="concept-card">
+                <h4>¿Libertad negativa o positiva?</h4>
+                <p>Hobbes define la libertad como ausencia de impedimentos físicos. Locke la entiende como vivir bajo la ley que uno mismo ha consentido. Rousseau la concibe como obediencia a la ley que uno se ha dado a sí mismo (autonomía). Estas tres nociones siguen siendo el centro del debate político contemporáneo.</p>
+                <button class="expand-btn" onclick="openModal('debate-libertad')" style="margin-top:12px;">+ Ampliar</button>
+            </div>
+
+            <div class="concept-card">
+                <h4>¿Quién tiene derecho a resistir al poder?</h4>
+                <p>¿Cuándo es legítimo desobedecer, resistir o rebelarse contra el poder? Hobbes: casi nunca. Locke: cuando el gobierno viola los derechos naturales. Rousseau: la soberanía nunca puede ser usurpada porque siempre pertenece al pueblo. Un debate que sigue vivo en la teoría de la desobediencia civil.</p>
+                <button class="expand-btn" onclick="openModal('debate-resistencia')" style="margin-top:12px;">+ Ampliar</button>
+            </div>
+
+            <div class="concept-card">
+                <h4>Democracia representativa vs. directa</h4>
+                <p>Locke defiende un gobierno representativo en el que los ciudadanos eligen a sus representantes. Rousseau rechaza la representación: la soberanía no puede delegarse; la democracia verdadera requiere participación directa. Este debate estructura la política democrática hasta hoy.</p>
+                <button class="expand-btn" onclick="openModal('debate-democracia')" style="margin-top:12px;">+ Ampliar</button>
+            </div>
+
+            <div class="concept-card">
+                <h4>¿Puede el individuo ser forzado a ser libre?</h4>
+                <p>Rousseau afirma que quien rechaza la voluntad general puede ser «forzado a ser libre». Esta aparente paradoja ha generado debates sobre si el pensamiento de Rousseau es el fundamento del totalitarismo o de la democracia. Isaiah Berlin y otros lo interpretaron como semilla del autoritarismo.</p>
+                <button class="expand-btn" onclick="openModal('debate-forzado')" style="margin-top:12px;">+ Ampliar</button>
+            </div>
+
+            <div class="concept-card">
+                <h4>Pensamiento medieval vs. contractualismo</h4>
+                <p>¿Es el contractualismo una ruptura radical con el pensamiento medieval o una secularización de ideas ya presentes en él? El concepto medieval de consentimiento de los gobernados, el derecho de resistencia al tirano y la distinción entre poder legítimo e ilegítimo tienen ecos en los contractualistas modernos.</p>
+                <button class="expand-btn" onclick="openModal('debate-medievalmoderno')" style="margin-top:12px;">+ Ampliar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════ GLOSARIO ═══════ -->
+    <div class="section" id="glosario">
+        <div class="section-header">
+            <div class="section-icon">📋</div>
+            <h2 class="section-title">Glosario de términos</h2>
+        </div>
+
+        <div class="glossary">
+            <dl class="glossary-term">
+                <dt>Contrato social</dt>
+                <dd>Acuerdo hipotético o real mediante el cual los individuos en estado de naturaleza acuerdan constituir una sociedad política, sometiéndose a una autoridad común y a sus leyes a cambio de ciertos beneficios (seguridad, protección de derechos, justicia).</dd>
+            </dl>
+            <dl class="glossary-term">
+                <dt>Estado de naturaleza</dt>
+                <dd>Condición hipotética de los seres humanos antes de toda organización política. Es un recurso metodológico para determinar cuáles son los derechos y necesidades originales del ser humano y qué justifica la creación del Estado.</dd>
+            </dl>
+            <dl class="glossary-term">
+                <dt>Soberanía</dt>
+                <dd>Poder supremo y absoluto en una comunidad política. Para Bodin, es perpetua e indivisible; para Hobbes, reside en el soberano absoluto; para Locke, en el poder legislativo; para Rousseau, en el pueblo y es inalienable e indelegable.</dd>
+            </dl>
+            <dl class="glossary-term">
+                <dt>Ley natural</dt>
+                <dd>Conjunto de principios morales accesibles a la razón humana que regulan la conducta independientemente de la legislación positiva. Los contractualistas la utilizan como fundamento de los derechos naturales y del contrato social.</dd>
+            </dl>
+            <dl class="glossary-term">
+                <dt>Voluntad general</dt>
+                <dd>Concepto central de Rousseau. La voluntad orientada al bien común de todos los ciudadanos, distinguida de la «voluntad de todos» (suma de intereses particulares). La ley legítima expresa la voluntad general; obedeciéndola, el ciudadano se obedece a sí mismo.</dd>
+            </dl>
+            <dl class="glossary-term">
+                <dt>Derechos naturales</dt>
+                <dd>Derechos que posee todo ser humano por su naturaleza racional, independientemente de cualquier ley positiva. Para Locke: vida, libertad y propiedad. Fundamento de las declaraciones de derechos modernas (1776, 1789).</dd>
+            </dl>
+            <dl class="glossary-term">
+                <dt>Tiranía</dt>
+                <dd>Forma de gobierno ilegítima en la que el gobernante actúa en beneficio propio y no del bien común, o viola las leyes fundamentales de la comunidad. Tanto la tradición medieval como los contractualistas la distinguen del gobierno legítimo y discuten si autoriza la resistencia.</dd>
+            </dl>
+            <dl class="glossary-term">
+                <dt>Absolutismo</dt>
+                <dd>Sistema político en el que el monarca concentra todos los poderes sin limitación legal efectiva. Hobbes lo justifica filosóficamente: sólo un soberano absoluto puede garantizar la paz. Los absolutistas históricos (Luis XIV) lo practicaron invocando el derecho divino.</dd>
+            </dl>
+            <dl class="glossary-term">
+                <dt>Buen salvaje</dt>
+                <dd>Expresión asociada a Rousseau (aunque no la acuñó él) que designa al ser humano en estado de naturaleza: libre de la corrupción social, guiado por la piedad natural y el amor de sí mismo moderado. No es un estado de felicidad perfecta, sino de inocencia y autosuficiencia.</dd>
+            </dl>
+            <dl class="glossary-term">
+                <dt>Separación de poderes</dt>
+                <dd>Principio, desarrollado por Locke y sistematizado por Montesquieu, según el cual los poderes legislativo, ejecutivo y judicial deben estar en manos de órganos distintos para evitar la concentración tiránica del poder. Base de las constituciones liberales modernas.</dd>
+            </dl>
+            <dl class="glossary-term">
+                <dt>Iusnaturalismo</dt>
+                <dd>Corriente filosófica que afirma la existencia de derechos y normas morales fundados en la naturaleza humana (o en la razón), anteriores y superiores al derecho positivo. Es el marco general en el que se inserta la teoría del contrato social.</dd>
+            </dl>
+            <dl class="glossary-term">
+                <dt>Consentimiento</dt>
+                <dd>Principio según el cual la legitimidad del gobierno requiere el acuerdo —explícito o tácito— de los gobernados. Es el núcleo de la tradición liberal: ningún poder es legítimo si no descansa en el consentimiento de quienes lo soportan.</dd>
+            </dl>
+        </div>
+    </div>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>Materiales elaborados por Francisco Jiménez · Dpto. de Filosofía · <a href="https://pacofilo.github.io/filoalquipir/" target="_blank">IES Alquipir, Cehegín</a></p>
+</footer>
+
+
+<!-- ══════════════════════════════════════
+     MODALES
+══════════════════════════════════════ -->
+
+<!-- Agustín -->
+<div class="modal-overlay" id="modal-agustin">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">San Agustín de Hipona (354–430)</div><div class="modal-subtitle">Pensamiento político medieval · Ciudad de Dios</div></div>
+            <button class="modal-close" onclick="closeModal('agustin')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Pensamiento medieval</span>
+            <h4>Las dos ciudades</h4>
+            <p>La gran construcción política de Agustín es la distinción entre la <strong>Ciudad de Dios</strong> (<em>civitas Dei</em>) y la <strong>ciudad terrena</strong> (<em>civitas terrena</em>). No son dos comunidades geográficamente separadas, sino dos formas de amor que coexisten en la historia: la ciudad de Dios está formada por quienes aman a Dios hasta el desprecio de sí mismos; la ciudad terrena, por quienes se aman a sí mismos hasta el desprecio de Dios.</p>
+            <h4>El Estado como consecuencia del pecado</h4>
+            <p>Para Agustín, el Estado político —con su coacción, sus leyes y sus jueces— no sería necesario si los seres humanos no estuvieran corrompidos por el pecado original. En el estado de inocencia original, no habría dominación de unos hombres sobre otros. El poder coercitivo es, pues, consecuencia de la caída: es necesario, pero es un mal menor que controla un mal mayor.</p>
+            <p>Esto no significa que el Estado sea ilegítimo: es una institución providente que Dios permite para contener la violencia humana y mantener una paz relativa. La paz terrena, aunque imperfecta, es preferible al caos.</p>
+            <div class="modal-quote">«Has nos hecho para ti, Señor, y nuestro corazón está inquieto hasta que descanse en ti.»</div>
+            <h4>Influencia posterior</h4>
+            <p>La distinción agustiniana entre poder espiritual y poder temporal influyó decisivamente en el debate medieval sobre la relación entre Iglesia y Estado. La idea de que el Estado es provisional y subordinado al orden divino justificó, en la práctica, la supremacía política del Papado durante siglos. Pero también permitió que pensadores posteriores argumentaran en favor de la autonomía del poder civil.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Tomás -->
+<div class="modal-overlay" id="modal-tomas">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">Santo Tomás de Aquino (1225–1274)</div><div class="modal-subtitle">La síntesis escolástica · Aristotelismo cristiano</div></div>
+            <button class="modal-close" onclick="closeModal('tomas')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Pensamiento medieval</span>
+            <h4>El hombre como animal político</h4>
+            <p>Tomás recupera la definición de Aristóteles: el ser humano es por naturaleza un <em>animal sociale et politicum</em>. El Estado no nace del pecado (contra Agustín), sino de la naturaleza social del ser humano: incluso sin pecado original, los hombres vivirían en comunidades políticamente organizadas, porque así lo exige su naturaleza racional y social.</p>
+            <h4>La jerarquía de las leyes</h4>
+            <p>Tomás distingue cuatro tipos de ley que forman una jerarquía:</p>
+            <ul>
+                <li><strong>Ley eterna:</strong> la razón divina que gobierna el universo.</li>
+                <li><strong>Ley natural:</strong> la participación de la criatura racional en la ley eterna. Sus preceptos básicos son: hacer el bien y evitar el mal, conservar la vida, educar a los hijos, vivir en sociedad y buscar la verdad.</li>
+                <li><strong>Ley humana:</strong> derivación de la ley natural aplicada a situaciones concretas. Una ley humana que contradiga la ley natural no es ley sino corrupción de ley.</li>
+                <li><strong>Ley divina:</strong> la revelación sobrenatural (Biblia, Evangelio), necesaria porque la razón humana no alcanza por sí sola a los fines sobrenaturales.</li>
+            </ul>
+            <h4>Tiranía y resistencia</h4>
+            <p>Tomás distingue entre el <em>rex</em> (rey legítimo) y el <em>tyrannus</em> (tirano). El tirano que gobierna en beneficio propio, contra el bien común y las leyes fundamentales, puede ser resistido. Pero Tomás es cauteloso: el remedio al tirano no puede ser peor que la tiranía. La resistencia violenta está sujeta a condiciones estrictas.</p>
+            <div class="modal-quote">«Una ley injusta no es ley.» (<em>Lex iniusta non est lex</em>)</div>
+            <h4>Influencia</h4>
+            <p>El tomismo fue la doctrina oficial de la Iglesia Católica y del pensamiento escolástico durante siglos. Su concepto de ley natural influyó directamente en la Escuela de Salamanca, en Grocio y, a través de ellos, en toda la tradición contractualista y liberal.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Investiduras -->
+<div class="modal-overlay" id="modal-investiduras">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">La querella de las investiduras</div><div class="modal-subtitle">El conflicto entre Papado e Imperio · siglos XI–XIII</div></div>
+            <button class="modal-close" onclick="closeModal('investiduras')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Contexto medieval</span>
+            <h4>El conflicto</h4>
+            <p>En la Europa medieval, los obispos y abades no eran solo autoridades religiosas: controlaban enormes territorios, ejércitos y recursos. Por eso tanto el Papa como los emperadores y reyes querían tener el derecho de nombrarlos (<em>investirlos</em>). La querella de las investiduras fue el conflicto que enfrentó al Papa Gregorio VII con el Emperador Enrique IV en el siglo XI, y que culminó en el Concordato de Worms (1122).</p>
+            <h4>Las posiciones en juego</h4>
+            <p>Los <strong>papalistas</strong> (hierocráticos) argumentaban que el Papa tiene supremacía sobre todo poder temporal: los reyes reciben su corona del Papa y pueden ser depuestos por él. Los <strong>imperialistas</strong> argumentaban que el Emperador tiene autoridad independiente del Papa en los asuntos temporales.</p>
+            <h4>Las consecuencias filosóficas</h4>
+            <p>Este conflicto forzó a los pensadores medievales a elaborar teorías sobre la naturaleza del poder, sus límites y su origen. ¿El poder viene de Dios directamente al rey, o pasa por el Papa? ¿Qué autoridad puede deponer a un gobernante y en qué condiciones? Marsilio de Padua, Guillermo de Ockham y otros pensadores de los siglos XIII-XIV desarrollaron teorías de la soberanía secular precisamente para responder a estos debates.</p>
+            <p>En cierto sentido, la modernidad política —con su afirmación de la autonomía del Estado respecto de la Iglesia— es el resultado a largo plazo de este conflicto.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Marsilio -->
+<div class="modal-overlay" id="modal-marsilio">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">Marsilio de Padua (c. 1275–1342)</div><div class="modal-subtitle">Soberanía popular y gobierno laico · Defensor Pacis</div></div>
+            <button class="modal-close" onclick="closeModal('marsilio')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Pensamiento medieval tardío</span>
+            <h4>El Defensor Pacis</h4>
+            <p>Escrito en 1324, el <em>Defensor Pacis</em> es una obra revolucionaria en el contexto medieval. Marsilio argumenta que la fuente de todo poder legislativo es el <strong>pueblo</strong> o la «universalidad de los ciudadanos», y que el gobernante es simplemente el ejecutor de la ley elaborada por la comunidad.</p>
+            <h4>Separación radical de poderes</h4>
+            <p>Marsilio separa drásticamente el poder eclesiástico del civil. La Iglesia no tiene ninguna autoridad coercitiva en asuntos temporales: su poder se limita a lo espiritual. Esta separación —radical para su época— le valió la condena del Papa Juan XXII y la huida a la corte de Luis de Baviera.</p>
+            <h4>Anticipaciones modernas</h4>
+            <p>Las ideas de Marsilio anticipan sorprendentemente el constitucionalismo moderno: el poder legislativo reside en el pueblo, el gobernante está subordinado a la ley, la Iglesia no tiene autoridad política. Estos principios aparecerán de nuevo, con fundamentos distintos, en Locke, Rousseau y la tradición liberal.</p>
+            <div class="modal-quote">«La causa eficiente primera de la ley es el pueblo o la universalidad de los ciudadanos.»</div>
+        </div>
+    </div>
+</div>
+
+<!-- Resistencia medieval -->
+<div class="modal-overlay" id="modal-resistencia">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">El derecho de resistencia medieval</div><div class="modal-subtitle">Tiranicidio y límites del poder · tradición escolástica</div></div>
+            <button class="modal-close" onclick="closeModal('resistencia')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Pensamiento medieval</span>
+            <h4>La distinción rey / tirano</h4>
+            <p>La tradición medieval desarrolló una distinción rigurosa entre el <strong>rey legítimo</strong> (que gobierna para el bien común según la ley) y el <strong>tirano</strong> (que gobierna para su propio beneficio o fuera de la ley). Esta distinción era la base para discutir cuándo era legítimo resistir o deponer a un gobernante.</p>
+            <h4>Juan de Salisbury (s. XII)</h4>
+            <p>En el <em>Policraticus</em>, Juan de Salisbury fue uno de los primeros en defender explícitamente el <strong>tiranicidio</strong>: matar a un tirano no es asesinato sino un acto virtuoso. El tirano es un enemigo de Dios y de la comunidad; su muerte libera a la sociedad de un parásito.</p>
+            <h4>Tomás de Aquino: una posición más cautelosa</h4>
+            <p>Tomás acepta el derecho de resistencia pero con importantes matices: la resistencia al tirano es legítima, pero debe ser colectiva (no de individuos aislados), proporcional al daño causado y no puede generar un desorden mayor que el que intenta remediar. El tiranicidio individual es moralmente problemático.</p>
+            <h4>La conexión con el contractualismo</h4>
+            <p>Cuando Locke defiende el derecho de revolución contra el gobierno que viola los derechos naturales, está secularizando y sistematizando una doctrina que los escolásticos medievales ya habían esbozado en términos teológicos. La continuidad intelectual es mayor de lo que habitualmente se reconoce.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Salamanca -->
+<div class="modal-overlay" id="modal-salamanca">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">La Escuela de Salamanca (s. XVI)</div><div class="modal-subtitle">Derecho natural, gentes y conquista de América</div></div>
+            <button class="modal-close" onclick="closeModal('salamanca')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Transición medieval-moderna</span>
+            <h4>El contexto americano</h4>
+            <p>La conquista de América planteó con urgencia una pregunta filosófica sin precedentes: ¿tienen los pueblos indígenas derechos? ¿Pueden ser legítimamente sometidos, esclavizados, desposeídos de sus tierras? Los teólogos dominicos de la Universidad de Salamanca —Francisco de Vitoria, Francisco Suárez, Domingo de Soto— elaboraron respuestas que transformaron la teoría política y jurídica occidental.</p>
+            <h4>Francisco de Vitoria y los derechos de los indios</h4>
+            <p>Vitoria argumentó que los indígenas americanos eran <strong>seres racionales con plenos derechos naturales</strong>: derecho a la vida, a la propiedad, al autogobierno. Ningún título —la bula papal, la superioridad cultural, la necesidad de evangelización— justificaba desposeerlos de sus tierras o someterlos por la fuerza. España podía comerciar con ellos y enviar misioneros, pero no conquistarlos.</p>
+            <h4>Influencia en el contractualismo</h4>
+            <p>La Escuela de Salamanca desarrolló la noción de <strong>derechos naturales universales</strong> que pertenecen a todo ser humano como tal. Esta idea —que los derechos no dependen de la religión, la cultura ni la ciudadanía— es el fundamento directo de los derechos naturales de Locke y de las declaraciones de derechos modernas. Hugo Grocio, que sistematizó el derecho natural laico, conocía y usó las obras de Vitoria.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Hobbes -->
+<div class="modal-overlay" id="modal-hobbes">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">Thomas Hobbes (1588–1679)</div><div class="modal-subtitle">El Leviatán y el contrato de sujeción · Inglaterra</div></div>
+            <button class="modal-close" onclick="closeModal('hobbes')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Contractualismo absolutista</span>
+            <h4>El estado de naturaleza hobbesiano</h4>
+            <p>El estado de naturaleza de Hobbes es el escenario más sombrío del pensamiento político moderno. Sin gobierno, los seres humanos —iguales en capacidad de hacerse daño, movidos por el deseo de poder y el miedo a la muerte— se hallan en una <strong>guerra de todos contra todos</strong> (<em>bellum omnium contra omnes</em>). No hay justicia ni injusticia: «nada puede ser injusto» donde no hay ley, y la fuerza y el fraude son las virtudes cardinales.</p>
+            <div class="modal-quote">«La vida del hombre [en el estado de naturaleza] es solitaria, pobre, desagradable, brutal y corta.»</div>
+            <h4>El contrato de sujeción</h4>
+            <p>Para escapar del estado de naturaleza, los individuos celebran un <strong>contrato</strong> en el que cada uno renuncia a su derecho natural a gobernarse por sí mismo y lo transfiere a un soberano (persona o asamblea). Este contrato no es entre los ciudadanos y el soberano, sino <em>entre los ciudadanos entre sí</em> para obedecer a un soberano común. Por eso el soberano no está vinculado por el contrato y no puede ser resistido.</p>
+            <h4>La soberanía absoluta</h4>
+            <p>El soberano de Hobbes es absoluto: legisla sin control, juzga sin apelación, nombra y depone ministros y funcionarios. No hay separación de poderes. Los súbditos no pueden resistirle salvo en un caso: si el soberano atenta directamente contra su vida. Esta es la única reserva de libertad natural que permanece, porque la razón de ser del contrato es preservar la vida.</p>
+            <h4>Hobbes y la modernidad política</h4>
+            <p>Hobbes fue el primer gran teórico del <strong>Estado laico soberano</strong>: un poder que no fundamenta su autoridad en Dios ni en la tradición, sino en su capacidad para garantizar la paz. Su pensamiento influyó en el absolutismo ilustrado pero también, paradójicamente, en el liberalismo: la idea de que el Estado es un artificio creado por seres humanos para satisfacer sus necesidades es genuinamente moderna y contractualista.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Locke -->
+<div class="modal-overlay" id="modal-locke">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">John Locke (1632–1704)</div><div class="modal-subtitle">Los Dos Tratados y el liberalismo político · Inglaterra</div></div>
+            <button class="modal-close" onclick="closeModal('locke')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Contractualismo liberal</span>
+            <h4>El estado de naturaleza lockeano</h4>
+            <p>Frente a Hobbes, Locke describe el estado de naturaleza como un estado de <strong>paz relativa</strong> gobernado por la ley natural. Los individuos poseen ya —antes de cualquier contrato— tres derechos naturales inalienables: <strong>vida, libertad y propiedad</strong>. La ley natural, accesible a la razón, prohíbe a cualquier individuo atentar contra estos derechos de los demás.</p>
+            <p>El problema es que en el estado de naturaleza no hay juez imparcial para resolver los conflictos: cada uno es juez en su propio caso. Esto genera inestabilidad y es lo que motiva la creación del Estado.</p>
+            <h4>El contrato de confianza</h4>
+            <p>Los individuos se asocian y crean el Estado para <strong>proteger sus derechos naturales preexistentes</strong>. El gobierno recibe su autoridad como un <em>trust</em> (fideicomiso): la ejerce en nombre de los ciudadanos y para su beneficio. Si la traiciona, los ciudadanos pueden retirar su confianza. El gobierno no crea los derechos: los protege.</p>
+            <h4>Separación de poderes y gobierno representativo</h4>
+            <p>Locke distingue el poder <strong>legislativo</strong> (supremo: elabora las leyes con el consentimiento de los representantes) y el poder <strong>ejecutivo</strong> (aplica las leyes). Rechaza la concentración de ambos en el mismo órgano. El poder legislativo debe ser representativo: los ciudadanos solo están obligados por las leyes que han consentido a través de sus representantes.</p>
+            <div class="modal-quote">«El poder legislativo supremo no puede arrogarse el poder de gobernar por decretos arbitrarios improvisados, sino que está obligado a dispensar la justicia y a decidir los derechos de los súbditos mediante leyes promulgadas y establecidas.»</div>
+            <h4>El derecho de revolución</h4>
+            <p>Si el gobierno viola los derechos naturales de los ciudadanos —si actúa contra la vida, la libertad o la propiedad de aquellos a quienes debía proteger—, el <strong>poder revierte al pueblo</strong>, que tiene derecho a reconstituir el gobierno. Locke fue la justificación filosófica de la Revolución Gloriosa inglesa (1688) y de la independencia americana (1776).</p>
+        </div>
+    </div>
+</div>
+
+<!-- Rousseau -->
+<div class="modal-overlay" id="modal-rousseau">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">Jean-Jacques Rousseau (1712–1778)</div><div class="modal-subtitle">El contrato social y la voluntad general · Ginebra</div></div>
+            <button class="modal-close" onclick="closeModal('rousseau')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Contractualismo democrático</span>
+            <h4>La corrupción social</h4>
+            <p>Rousseau parte de un diagnóstico radical: <strong>la sociedad corrompe al ser humano</strong>. En el estado de naturaleza, el hombre es libre, autosuficiente y guiado por dos instintos básicos: el amor de sí mismo (deseo de conservación) y la piedad (repugnancia natural al sufrimiento ajeno). No es violento ni bueno activamente: simplemente está libre de los vicios sociales.</p>
+            <p>Es la propiedad privada, la desigualdad y las instituciones sociales las que generan la vanidad, la envidia, la dominación y la miseria. En el <em>Discurso sobre el origen de la desigualdad</em> (1755), el primer propietario es el padre de todos los males.</p>
+            <div class="modal-quote">«El primero que, habiendo cercado un terreno, pensó en decir "esto es mío" y encontró gentes lo bastante simples para creerle, fue el verdadero fundador de la sociedad civil.»</div>
+            <h4>El problema del contrato legítimo</h4>
+            <p>El contrato social legítimo no puede reproducir la desigualdad y la dominación existentes. Debe transformar la <em>libertad natural</em> (hacer lo que uno quiere) en <strong>libertad civil y moral</strong> (obediencia a la ley que uno mismo se ha dado). La fórmula de Rousseau: «cada uno, uniéndose a todos, no obedece sin embargo más que a sí mismo y permanece tan libre como antes».</p>
+            <h4>La voluntad general</h4>
+            <p>La soberanía reside en el pueblo y se expresa a través de la <strong>voluntad general</strong>: la voluntad orientada al bien común de todos. La voluntad general no es la voluntad de la mayoría ni la suma de voluntades individuales (voluntad de todos), sino la voluntad que busca el bien de la comunidad como tal. Las leyes que expresan la voluntad general son justas porque los ciudadanos se las dan a sí mismos.</p>
+            <h4>Soberanía inalienable e indivisible</h4>
+            <p>La soberanía no puede delegarse ni dividirse. Rousseau rechaza el gobierno representativo de Locke: «el pueblo inglés se cree libre, pero se equivoca mucho; sólo lo es durante la elección de los miembros del Parlamento; una vez elegidos, es esclavo». La soberanía pertenece siempre al pueblo y solo puede ejercerse directamente.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Estado de naturaleza -->
+<div class="modal-overlay" id="modal-estado-naturaleza">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">El estado de naturaleza</div><div class="modal-subtitle">Un experimento mental de la filosofía política</div></div>
+            <button class="modal-close" onclick="closeModal('estado-naturaleza')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Concepto clave</span>
+            <h4>¿Qué es el estado de naturaleza?</h4>
+            <p>El estado de naturaleza no es una descripción histórica de cómo vivieron los seres humanos antes de organizarse políticamente (aunque los contractualistas a veces hablan así). Es principalmente un <strong>recurso metodológico</strong>: imaginar cómo serían los seres humanos sin instituciones políticas permite determinar cuáles son sus derechos y necesidades fundamentales y qué justifica la creación del Estado.</p>
+            <h4>Las tres visiones</h4>
+            <p>Las diferentes descripciones del estado de naturaleza llevan a conclusiones políticas radicalmente distintas:</p>
+            <ul>
+                <li><strong>Hobbes:</strong> guerra, miedo, miseria. → Justifica el Estado absoluto.</li>
+                <li><strong>Locke:</strong> paz relativa con derechos naturales ya existentes. → Justifica el Estado limitado y representativo.</li>
+                <li><strong>Rousseau:</strong> inocencia, libertad, autosuficiencia. → El Estado legítimo debe preservar la libertad, no suprimirla.</li>
+            </ul>
+            <h4>Críticas al concepto</h4>
+            <p>Hume criticó el contractualismo señalando que el estado de naturaleza y el contrato original son puras ficciones: históricamente, los Estados surgieron de la conquista y la costumbre, no de acuerdos racionales. La mayoría de las personas nunca consintieron explícitamente al gobierno bajo el que viven.</p>
+            <p>Los contractualistas respondieron que la ficción tiene valor <em>normativo</em>: sirve para evaluar si las instituciones existentes son justas, no para describir su origen histórico. John Rawls desarrolló esta idea en el siglo XX con su concepto del «velo de ignorancia».</p>
+        </div>
+    </div>
+</div>
+
+<!-- Contrato social -->
+<div class="modal-overlay" id="modal-contrato-social">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">El contrato social</div><div class="modal-subtitle">Fundamento del poder legítimo</div></div>
+            <button class="modal-close" onclick="closeModal('contrato-social')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Concepto clave</span>
+            <h4>¿Qué tipo de contrato?</h4>
+            <p>La teoría del contrato social tiene distintas versiones según el tipo de contrato que postula:</p>
+            <ul>
+                <li><strong>Pacto de unión:</strong> Los individuos acuerdan constituirse en sociedad civil (comunidad política).</li>
+                <li><strong>Pacto de sujeción:</strong> La sociedad civil ya constituida encomienda el gobierno a una persona o asamblea.</li>
+            </ul>
+            <p>Hobbes combina ambos en uno solo y elimina el segundo: los individuos se obligan directamente a obedecer al soberano. Locke distingue los dos momentos: primero la sociedad, luego el gobierno, que puede ser disuelto sin disolver la sociedad. Rousseau solo reconoce el pacto de unión: la soberanía reside en el pueblo unido y nunca puede transferirse.</p>
+            <h4>¿Consentimiento real o hipotético?</h4>
+            <p>Un problema central del contractualismo: ¿dónde está el consentimiento real? La mayoría de los ciudadanos nunca firmaron ningún contrato. Locke respondió con el <strong>consentimiento tácito</strong>: vivir en un territorio y beneficiarse de sus instituciones implica aceptarlas. Rousseau con el <strong>consentimiento ideal</strong>: lo que importa es si el contrato social es tal que cualquier ser racional lo aceptaría.</p>
+            <h4>Legado</h4>
+            <p>La idea del contrato social fue la base filosófica de las grandes revoluciones del siglo XVIII (americana y francesa) y de todas las constituciones modernas. John Rawls la revivió en el siglo XX con su teoría de la justicia: ¿qué principios elegiría una persona racional si no supiera qué posición ocuparía en la sociedad?</p>
+        </div>
+    </div>
+</div>
+
+<!-- Soberanía -->
+<div class="modal-overlay" id="modal-soberania">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">La soberanía</div><div class="modal-subtitle">¿Quién tiene la última palabra?</div></div>
+            <button class="modal-close" onclick="closeModal('soberania')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Concepto clave</span>
+            <h4>Jean Bodin y el concepto moderno de soberanía</h4>
+            <p>El concepto moderno de soberanía fue formulado por Jean Bodin en <em>Los Seis Libros de la República</em> (1576). La soberanía es el poder <strong>supremo, perpetuo y absoluto</strong> sobre los ciudadanos y súbditos. No reconoce superior en lo temporal. Esta formulación respondía al caos de las guerras de religión: se necesitaba un poder que estuviera por encima de las facciones religiosas y pudiera imponer la paz.</p>
+            <h4>Tres teorías de la soberanía</h4>
+            <ul>
+                <li><strong>Hobbes:</strong> la soberanía es indivisible e irresistible. Reside en el soberano (monarca o asamblea) que recibió todos los derechos de los individuos. No puede limitarse sin destruirse.</li>
+                <li><strong>Locke:</strong> la soberanía en sentido estricto reside en el pueblo, que la delega al legislativo representativo con limitaciones. El ejecutivo está subordinado al legislativo. El pueblo puede recuperar la soberanía si el gobierno la traiciona.</li>
+                <li><strong>Rousseau:</strong> la soberanía es inalienable e indivisible y reside siempre en el pueblo. No puede delegarse. El gobierno es solo un comisario ejecutor de la voluntad general.</li>
+            </ul>
+            <h4>Soberanía y globalización</h4>
+            <p>El concepto moderno de soberanía nacional está bajo presión en la actualidad: los tratados internacionales, las organizaciones supranacionales (UE, ONU) y los problemas globales (cambio climático, pandemias) desafían la idea de que cada Estado tiene poder supremo dentro de sus fronteras. El debate sobre la soberanía sigue siendo uno de los más urgentes de la filosofía política contemporánea.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Voluntad general -->
+<div class="modal-overlay" id="modal-voluntad-general">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">La voluntad general</div><div class="modal-subtitle">El concepto más influyente y controvertido de Rousseau</div></div>
+            <button class="modal-close" onclick="closeModal('voluntad-general')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Rousseau · Concepto clave</span>
+            <h4>Voluntad general vs. voluntad de todos</h4>
+            <p>Rousseau distingue cuidadosamente entre la <strong>voluntad general</strong> (<em>volonté générale</em>) y la <strong>voluntad de todos</strong> (<em>volonté de tous</em>). La voluntad de todos es simplemente la suma de las voluntades individuales, que buscan el bien particular de cada uno. La voluntad general, en cambio, es la voluntad orientada al <em>bien común</em> de la comunidad entera.</p>
+            <p>La voluntad general «no puede errar»: si todos los ciudadanos deliberan sobre el bien común, abstrayendo sus intereses particulares, el resultado será siempre justo. El problema es que los ciudadanos reales no siempre deliberan así: se dejan dominar por los intereses particulares o de grupo.</p>
+            <h4>La paradoja de ser forzado a ser libre</h4>
+            <p>Rousseau afirma que quien rechaza la voluntad general puede ser «forzado a ser libre». La lógica: si la voluntad general es la voluntad que el ciudadano tendría como ser racional orientado al bien común, entonces quien la rechaza está dominado por sus pasiones o intereses particulares. Forzarle a cumplirla es, en un sentido profundo, liberarle de sus cadenas.</p>
+            <p>Esta idea ha generado debates interminables. Isaiah Berlin la interpretó como el germen filosófico del totalitarismo: si el Estado puede definir qué es la «verdadera libertad», puede justificar cualquier opresión en nombre de ella. Otros defensores de Rousseau señalan que esto malinterpreta su pensamiento, que es esencialmente democrático.</p>
+            <div class="modal-quote">«La obediencia a la ley que uno mismo se ha prescrito es libertad.»</div>
+        </div>
+    </div>
+</div>
+
+<!-- Debate natural/artificial -->
+<div class="modal-overlay" id="modal-debate-natural-artificial">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">¿Es el Estado natural o artificial?</div><div class="modal-subtitle">Aristóteles y Tomás vs. los contractualistas</div></div>
+            <button class="modal-close" onclick="closeModal('debate-natural-artificial')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Debate filosófico</span>
+            <h4>La tesis naturalista</h4>
+            <p>Aristóteles y Tomás de Aquino sostienen que el Estado es una exigencia de la naturaleza humana: el ser humano es por naturaleza un animal político (<em>zōon politikón</em>). Sin la comunidad política, el ser humano no puede desarrollar plenamente sus capacidades. Quien vive fuera de la polis «o es una bestia o es un dios».</p>
+            <p>En esta visión, el Estado no es un artificio creado por los individuos, sino la forma más perfecta de comunidad humana, que emerge naturalmente del desarrollo de formas más simples (familia, aldea, ciudad).</p>
+            <h4>La tesis artificialista</h4>
+            <p>Los contractualistas sostienen que el Estado es un artificio: una construcción racional creada por individuos para satisfacer necesidades que no pueden satisfacer solos. No hay ningún impulso natural que lleve a los seres humanos a organizarse políticamente: lo que hay es una necesidad racional calculada.</p>
+            <p>Esta diferencia tiene consecuencias prácticas enormes. Si el Estado es natural, su autoridad es más difícil de cuestionar: está inscrita en la naturaleza de las cosas. Si es artificial, su autoridad depende de si cumple la función para la que fue creado: puede reformarse radicalmente o incluso disolverse cuando falla.</p>
+            <h4>¿Una falsa dicotomía?</h4>
+            <p>Algunos filósofos contemporáneos argumentan que la distinción es menos nítida de lo que parece. Los seres humanos son naturalmente sociables (naturalismo tiene razón en esto), pero las formas específicas de organización política que adoptan son siempre contingentes e históricas (artificialismo tiene razón en esto). La naturaleza humana no prescribe una forma de gobierno concreta.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Debate libertad -->
+<div class="modal-overlay" id="modal-debate-libertad">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">¿Libertad negativa o positiva?</div><div class="modal-subtitle">Tres conceptos de libertad en la filosofía política moderna</div></div>
+            <button class="modal-close" onclick="closeModal('debate-libertad')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Debate filosófico</span>
+            <h4>La libertad negativa (Hobbes, Berlin)</h4>
+            <p>La libertad negativa es <strong>ausencia de impedimentos externos</strong>. Soy libre cuando nadie ni nada me impide hacer lo que quiero. Para Hobbes, «un hombre libre es aquel que no está impedido de hacer lo que tiene voluntad de hacer». Isaiah Berlin, en su célebre ensayo «Dos conceptos de libertad» (1958), defiende la libertad negativa como la única concepción políticamente segura: la positiva abre la puerta al totalitarismo.</p>
+            <h4>La libertad como autogobierno (Locke)</h4>
+            <p>Para Locke, la libertad no es simplemente hacer lo que uno quiere sin obstáculos: es vivir bajo la ley que uno mismo ha consentido a través de sus representantes. La ley no destruye la libertad, sino que la protege: sin ley que proteja los derechos de todos, la libertad de cada uno está amenazada por la fuerza de los demás.</p>
+            <h4>La libertad como autonomía (Rousseau, Kant)</h4>
+            <p>Rousseau da el paso más radical: la verdadera libertad no es ni ausencia de obstáculos ni obediencia a la ley que otros elaboraron. Es <strong>obediencia a la ley que uno mismo se ha dado</strong> (autonomía). Cuando el ciudadano obedece la voluntad general que él mismo ha contribuido a formar, no está sometido a ningún poder ajeno: se obedece a sí mismo. Kant desarrolló esta idea en el plano moral con su concepto de autonomía de la voluntad.</p>
+            <h4>Relevancia actual</h4>
+            <p>Este debate sigue siendo central. Los libertarios invocan la libertad negativa para oponerse a las intervenciones del Estado. Los republicanos y comunitaristas invocan nociones más positivas de libertad para defender la participación política activa y los bienes comunes. No hay consenso: la discusión continúa.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Debate resistencia -->
+<div class="modal-overlay" id="modal-debate-resistencia">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">¿Quién tiene derecho a resistir al poder?</div><div class="modal-subtitle">Desobediencia, revolución y legitimidad</div></div>
+            <button class="modal-close" onclick="closeModal('debate-resistencia')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Debate filosófico</span>
+            <h4>Hobbes: casi nunca</h4>
+            <p>Para Hobbes, la resistencia al soberano destruye la razón de ser del contrato: garantizar la paz. Si cada ciudadano puede juzgar cuándo el soberano actúa justamente y resistirle cuando no, el resultado es el caos del estado de naturaleza. Solo está justificado resistir si el soberano atenta directamente contra la vida del súbdito, porque la autoconservación es el derecho inalienable que motivó el contrato.</p>
+            <h4>Locke: derecho de revolución</h4>
+            <p>Locke es el gran teórico del derecho de resistencia liberal. Cuando el gobierno viola los derechos naturales sistemáticamente —cuando actúa como tirano—, el poder revierte al pueblo. El pueblo tiene entonces el derecho —y en cierto sentido el deber— de reconstituir el gobierno. Locke pone condiciones: la resistencia es el último recurso, no el primero.</p>
+            <h4>La desobediencia civil moderna</h4>
+            <p>Henry David Thoreau (1849) y Mahatma Gandhi formularon el concepto de <strong>desobediencia civil</strong>: resistencia no violenta a leyes injustas, aceptando las consecuencias legales como forma de apelar a la conciencia de la mayoría. Martin Luther King la desarrolló en el movimiento por los derechos civiles. John Rawls la incorporó a la teoría liberal: la desobediencia civil es legítima cuando las instituciones no son suficientemente justas y los medios legales están agotados.</p>
+            <div class="modal-quote">«La ley nunca hizo a los hombres más justos; y, gracias a su respeto por ella, incluso los bien dispuestos se convierten diariamente en agentes de la injusticia.»<br><span style="font-size: 14px; color: var(--text-tertiary);">— Henry David Thoreau, La desobediencia civil (1849)</span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Debate democracia -->
+<div class="modal-overlay" id="modal-debate-democracia">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">Democracia representativa vs. directa</div><div class="modal-subtitle">Locke y Rousseau ante la soberanía popular</div></div>
+            <button class="modal-close" onclick="closeModal('debate-democracia')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Debate filosófico</span>
+            <h4>La posición de Locke: representación y consentimiento</h4>
+            <p>Locke defendió el gobierno representativo: los ciudadanos eligen periódicamente a sus representantes, quienes elaboran las leyes. El consentimiento que legitima el gobierno es el consentimiento <em>tácito</em> dado a través de la elección de representantes. Este es el modelo de la democracia liberal moderna: parlamentos, elecciones, separación de poderes.</p>
+            <h4>La crítica de Rousseau</h4>
+            <p>Rousseau rechaza la representación con una crítica demoledora: «La soberanía no puede ser representada por la misma razón por la que no puede ser enajenada. Consiste esencialmente en la voluntad general, y la voluntad no se representa.» El diputado elegido no es el soberano: es un comisario revocable. «El pueblo inglés se cree libre: se engaña mucho; solo es libre durante la elección de los miembros del Parlamento.»</p>
+            <h4>El dilema de la democracia moderna</h4>
+            <p>Las democracias contemporáneas combinan elementos de ambas tradiciones: elecciones representativas (Locke), pero también referendos, iniciativas populares y mecanismos de participación directa (Rousseau). El debate sobre cuánta participación directa es deseable —y viable en sociedades complejas con millones de ciudadanos— no está cerrado. Los movimientos populistas del siglo XXI frecuentemente invocan a Rousseau frente a las «élites» representativas.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Debate forzado a ser libre -->
+<div class="modal-overlay" id="modal-debate-forzado">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">¿Puede el individuo ser forzado a ser libre?</div><div class="modal-subtitle">La paradoja más controvertida de Rousseau</div></div>
+            <button class="modal-close" onclick="closeModal('debate-forzado')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Debate filosófico</span>
+            <h4>La frase</h4>
+            <p>En el <em>Contrato Social</em> (I, 7), Rousseau escribe: «Para que el pacto social no sea una vana fórmula, incluye tácitamente el compromiso [...] que quien rehúse obedecer a la voluntad general será obligado a ello por todo el cuerpo: lo cual no significa otra cosa que se le forzará a ser libre.»</p>
+            <h4>La interpretación totalitaria (Berlin)</h4>
+            <p>Isaiah Berlin interpretó esta frase como el punto de partida filosófico del totalitarismo moderno. Si el Estado puede definir qué es la «verdadera libertad» y usar la coacción para imponerla, no hay límite a la represión que puede justificarse. Los regímenes totalitarios del siglo XX —nazis y soviéticos— usaron precisamente este esquema: «liberamos» a la gente de sus falsas consciencias, sus intereses particulares, su alienación.</p>
+            <h4>La defensa de Rousseau</h4>
+            <p>Los defensores de Rousseau argumentan que esta lectura es injusta. Rousseau no dice que el Estado pueda definir arbitrariamente la voluntad general: esta emerge del proceso democrático de deliberación colectiva. «Forzar a ser libre» significa simplemente que la minoría que pierde en una votación debe acatar el resultado democrático —algo que ninguna democracia puede evitar—. No es un cheque en blanco para la opresión.</p>
+            <h4>El debate continúa</h4>
+            <p>La tensión entre la voluntad del individuo y la voluntad de la comunidad no tiene resolución fácil. Los liberales como Berlin enfatizan los derechos individuales como límites infranqueables al poder colectivo. Los republicanos y comunitaristas enfatizan que la libertad individual solo es posible dentro de una comunidad política sana. Este es uno de los grandes debates de la filosofía política actual.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Debate medieval/moderno -->
+<div class="modal-overlay" id="modal-debate-medievalmoderno">
+    <div class="modal-box">
+        <div class="modal-header">
+            <div><div class="modal-title">Pensamiento medieval vs. contractualismo</div><div class="modal-subtitle">¿Ruptura radical o secularización?</div></div>
+            <button class="modal-close" onclick="closeModal('debate-medievalmoderno')">✕</button>
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Debate filosófico</span>
+            <h4>La tesis de la ruptura</h4>
+            <p>La interpretación tradicional presenta el contractualismo como una ruptura radical con el pensamiento medieval: donde éste fundamentaba el poder en Dios y la naturaleza, el contractualismo lo funda en la razón y el acuerdo humano. El Estado deja de ser un dato sagrado para convertirse en un artificio secular que puede reformarse o disolver.</p>
+            <h4>La tesis de la continuidad</h4>
+            <p>Sin embargo, una mirada más atenta revela importantes continuidades:</p>
+            <ul>
+                <li>La distinción medieval entre ley justa e injusta anticipa el derecho natural de los contractualistas.</li>
+                <li>La doctrina medieval del tiranicidio anticipa el derecho lockiano de revolución.</li>
+                <li>Marsilio de Padua defiende la soberanía popular en el siglo XIV.</li>
+                <li>La Escuela de Salamanca elabora la teoría de los derechos naturales universales que Locke sistematizará.</li>
+                <li>El concepto de consentimiento de los gobernados está presente en el conciliarismo medieval.</li>
+            </ul>
+            <h4>La diferencia fundamental</h4>
+            <p>La diferencia real no es tanto en las conclusiones como en el <em>fundamento</em>: el pensamiento medieval deriva los derechos y los límites del poder de la naturaleza divina y la ley eterna; el contractualismo los deriva de la naturaleza racional del individuo, independientemente de cualquier fundamento teológico. Esta laicización del fundamento político —el «secularismo» en sentido estricto— es la verdadera revolución de la modernidad política.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- ══════ SCRIPT ══════ -->
+<script>
+    function openModal(id) {
+        const overlay = document.getElementById('modal-' + id);
+        if (overlay) {
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    function closeModal(id) {
+        const overlay = document.getElementById('modal-' + id);
+        if (overlay) {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    }
+
+    document.querySelectorAll('.modal-overlay').forEach(overlay => {
+        overlay.addEventListener('click', function(e) {
+            if (e.target === overlay) {
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('.modal-overlay.active').forEach(overlay => {
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
